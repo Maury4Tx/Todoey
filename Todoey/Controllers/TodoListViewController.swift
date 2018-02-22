@@ -42,7 +42,8 @@ class TodoListViewController: UITableViewController {
         if let item = todoItems?[indexPath.row] {
             
             
-            var timeString = "\(item.dateCreated ?? nil)"
+            
+            let timeString = "\(String(describing: item.dateCreated))"
                     
             cell.textLabel?.text = item.title
             cell.detailTextLabel?.text = timeString
