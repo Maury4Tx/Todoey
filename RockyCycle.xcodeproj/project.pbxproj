@@ -23,7 +23,7 @@
 		122001048BEBA9A95025528F /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		24AC0DCBDE0853175550B36E /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304E70083F978D3950CD1795 /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
-		469B8658203B46520025AC1E /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		469B8658203B46520025AC1E /* RockyCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockyCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469B865B203B46520025AC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469B865D203B46520025AC1E /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		469B8660203B46520025AC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		469B8659203B46520025AC1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				469B8658203B46520025AC1E /* Todoey.app */,
+				469B8658203B46520025AC1E /* RockyCycle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		469B8657203B46520025AC1E /* Todoey */ = {
+		469B8657203B46520025AC1E /* RockyCycle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 469B866A203B46520025AC1E /* Build configuration list for PBXNativeTarget "Todoey" */;
+			buildConfigurationList = 469B866A203B46520025AC1E /* Build configuration list for PBXNativeTarget "RockyCycle" */;
 			buildPhases = (
 				3BCDF593BA1081F927DEB0A0 /* [CP] Check Pods Manifest.lock */,
 				469B8654203B46520025AC1E /* Sources */,
@@ -150,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = Todoey;
+			name = RockyCycle;
 			productName = Todoey;
-			productReference = 469B8658203B46520025AC1E /* Todoey.app */;
+			productReference = 469B8658203B46520025AC1E /* RockyCycle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 469B8653203B46510025AC1E /* Build configuration list for PBXProject "Todoey" */;
+			buildConfigurationList = 469B8653203B46510025AC1E /* Build configuration list for PBXProject "RockyCycle" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				469B8657203B46520025AC1E /* Todoey */,
+				469B8657203B46520025AC1E /* RockyCycle */,
 			);
 		};
 /* End PBXProject section */
@@ -414,7 +414,7 @@
 				DEVELOPMENT_TEAM = P748UJN26G;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WilliamHarris.Todoey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WilliamHarris.RockyCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,7 +430,7 @@
 				DEVELOPMENT_TEAM = P748UJN26G;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WilliamHarris.Todoey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WilliamHarris.RockyCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		469B8653203B46510025AC1E /* Build configuration list for PBXProject "Todoey" */ = {
+		469B8653203B46510025AC1E /* Build configuration list for PBXProject "RockyCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				469B8668203B46520025AC1E /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		469B866A203B46520025AC1E /* Build configuration list for PBXNativeTarget "Todoey" */ = {
+		469B866A203B46520025AC1E /* Build configuration list for PBXNativeTarget "RockyCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				469B866B203B46520025AC1E /* Debug */,

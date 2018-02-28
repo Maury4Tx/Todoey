@@ -9,14 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todoey-->
+        <!--RockyCycle-->
         <scene sceneID="NQc-pT-QMs">
             <objects>
-                <tableViewController id="b0E-0b-MHL" customClass="CategoryViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="b0E-0b-MHL" customClass="CategoryViewController" customModule="RockyCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wxt-YH-CO8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="nAB-xn-WoX" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -32,14 +33,7 @@
                             <outlet property="delegate" destination="b0E-0b-MHL" id="oFp-OH-QON"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="fTi-Oj-1Ju">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="34M-Sg-nL7">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="addButtonPressed:" destination="b0E-0b-MHL" id="iNo-sP-myK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="RockyCycle" id="fTi-Oj-1Ju"/>
                     <connections>
                         <segue destination="rNV-ae-L4W" kind="show" identifier="goToItems" id="Ktp-Lu-ZvK"/>
                     </connections>
@@ -51,7 +45,7 @@
         <!--Items-->
         <scene sceneID="V7d-9q-73B">
             <objects>
-                <tableViewController id="rNV-ae-L4W" customClass="TodoListViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="rNV-ae-L4W" customClass="TodoListViewController" customModule="RockyCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TZz-nj-3nD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,13 +89,7 @@
                             <outlet property="delegate" destination="rNV-ae-L4W" id="01T-EW-Aof"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="rDN-Wd-WcA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4en-ze-UgD">
-                            <connections>
-                                <action selector="addButtonPressed:" destination="rNV-ae-L4W" id="dEa-jb-22S"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Items" id="rDN-Wd-WcA"/>
                     <connections>
                         <outlet property="searchBar" destination="t6i-AI-vBr" id="dW5-id-eNW"/>
                     </connections>

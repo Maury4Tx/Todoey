@@ -25,7 +25,7 @@ class CategoryViewController: SwipeTableViewController {
         loadCategories()
         
         tableView.separatorStyle = .none
-
+        
     }
     
     //MARK - TableVIew Datasource Methods
@@ -41,14 +41,14 @@ class CategoryViewController: SwipeTableViewController {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         if let category = categories?[indexPath.row] {
-        
+            
             cell.textLabel?.text = category.name
             guard let categoryColour = UIColor(hexString: category.colour) else { fatalError()}
-        
+            
             cell.backgroundColor = categoryColour
             cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
         }
-
+        
         return cell
     }
     
@@ -68,7 +68,7 @@ class CategoryViewController: SwipeTableViewController {
             
         }
     }
-
+    
     
     //MARK: - Data Manipulation Methods
     
@@ -90,7 +90,7 @@ class CategoryViewController: SwipeTableViewController {
         categories = realm.objects(Category.self)
         
         tableView.reloadData()
-  
+        
     }
     
     //MARK - Delete Data from Swipe

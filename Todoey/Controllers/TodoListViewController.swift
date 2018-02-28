@@ -15,13 +15,13 @@ class TodoListViewController: SwipeTableViewController {
     
     let realm = try? Realm()
     var todoItems : Results<Item>?
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     
     var selectedCategory : Category? {
         didSet {
             loadItems()
-
+            
             
         }
     }
@@ -29,7 +29,7 @@ class TodoListViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        //        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
         tableView.separatorStyle = .none
         
@@ -50,7 +50,7 @@ class TodoListViewController: SwipeTableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         
         updateNaveBar(withHexCode: "1D9BF6")
-       
+        
     }
     
     //MARK - Nav Bar Setup Methods
@@ -82,12 +82,12 @@ class TodoListViewController: SwipeTableViewController {
         if let item = todoItems?[indexPath.row] {
             
             let timeString = "\(String(describing: item.dateCreated))"
-                    
+            
             cell.textLabel?.text = item.title
             cell.detailTextLabel?.text = timeString
             
             if let colour = UIColor(hexString: selectedCategory!.colour)?.darken(byPercentage:CGFloat(indexPath.row) / CGFloat(todoItems!.count)) {
-            
+                
                 cell.backgroundColor = colour
                 cell.textLabel?.textColor = ContrastColorOf(colour, returnFlat: true)
                 cell.detailTextLabel?.textColor = ContrastColorOf(colour, returnFlat: true)
